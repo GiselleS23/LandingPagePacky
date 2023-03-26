@@ -7,7 +7,7 @@
 
 }
 
-:root{
+:root{ /* Variables de estilos reutilizables */
     --colorTextPrimary: #AB29CA;
     --colorTextSecundary: #101e2c;
     --colorTextTerciary: #485663;
