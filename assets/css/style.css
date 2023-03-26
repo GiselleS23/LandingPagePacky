@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans:wght@200;300&family=Nunito+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,200&family=Quicksand&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family:'Poppins', sans-serif;
+
+}
+
+:root{
+    --colorTextPrimary: #AB29CA;
+    --colorTextSecundary: #101e2c;
+    --colorTextTerciary: #485663;
+    --mainColorPrimary: #9a00bf;
+    --mainColorSecundary: #f4d4fb;
+    --backgroundColor: #fafbfe;
+    --lowTextFontSize: 16px;
+    --textSizeTitle: 40px;
+    --textTitleCard: 24px;
+    --textTitleCardv2: 20px;
+    --textParagraph:16px;
+    --boxShadowPrimary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+header{
+width: 100%;
+height: 100px;
+position: fixed;
+z-index: 100;
+}
+
+.containerHeader{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000022;
+    padding: 0px 20px; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+}
+.logo img{
+    width: 200px;
+}
+.menu{
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.menu nav{
+    margin: 0px 20px;
+}
+.menu nav ul{
+    display: flex;
+    /* gap: 3rem; */
+}
+.menu nav ul li{
+    list-style: none;
+    margin: 20px 16px;
+}
+.menu nav ul li a{
+    color: var(--colorTextSecundary);
+    font-size: var(--lowTextFontSize);
+    /* font-weight: normal; */
+    position: relative;
+}
+.menu nav ul li a:hover{
+    color:var(--colorTextPrimary);
+}
+.btnCotizar{
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid var(--mainColorPrimary);
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 0px 20px;
+    transition: all 300ms;
+   /*  color: white;
+    font-weight: bolder; 
+    text-shadow: 1px 1px 2px pink; */
+}
+
+.btnCotizar:hover{
+    color: white;
+    background: var(--mainColorPrimary);
+}
+.menu .redesSociales{
+    margin: 0px 10px;
+}
+.menu .redesSociales a{
+    margin: 0px 4px;
+}
+.menu .redesSociales img{
+    width: 20px;
+}
+
+/* Portada de Inicio */
+
+.containerCover{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* background: var(--mainColorSecundary); */
+    background: #f68b8a;
+}
+
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.textCover{
+    width: 100%;
+    padding-right: 150px;
+}
+
+.textCover h1{
+    font-size: 50px;
+    color: var(--colorTextSecundary);
+}
+
+.textCover p{
+    font-size: var(--textParagraph);
+    color: var(--colorTextTerciary);
+    margin-top: 40px;
+}
+
+.btnText{
+    display: block; /* Lo convertimos en bloque */
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--mainColorPrimary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btnText:hover{
+    background: transparent;
+    border: 2px solid var(--mainColorPrimary);
+    color: var(--colorTextPrimary);
+}
+
+.imageCover{
+    width: 100%;
+}
+
+.imageCover img{
+    width: 550px;
+}
+
+/* Estilos Generales de las Cards reutilizables */
+.containerCardPrimary{
+    padding-top: 100px;
+}
+
+.cardPrimary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.textCardPrimary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.textCardPrimary p{
+    color: var(--colorTextPrimary);
+    letter-spacing: 4px;
+    font-size: var(--textParagraph);
+    font-weight: 500;
+}
+
+.textCardPrimary h1{
+    font-size: var(--textSizeTitle);
+    font-weight: 600;
+    color: var(--colorTextSecundary);    
+}
+
+.containerBoxCardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.boxCardPrimary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.boxCardPrimary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--boxShadowPrimary);
+}
+
+.boxCardPrimary h2{
+    font-size: var(--textTitleCard);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.boxCardPrimary p{
+    margin-top: 20px;
+}
+
+/* Sobre nosotros */
+.containerAbout{
+    padding: 100px 0px;
+    background: var(--backgroundColor);
+    margin-top: 100px;   
+}
+
+.about{/* contenedor padre  VER*/
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.textAbout{
+    width: 100px;
+    padding-right: 40px;
+}
+
+.textAbout h1{
+    color: var(--colorTextSecundary);
+    font-weight: 600;
+}
+
+.textAbout p{
+    font-size: var(--textParagraph);
+    margin-top: 40px;
+    color: var(--colorTextTerciary);
+}
+
+.imageAbout{
+    width: 100%;
+    display: flex;
+}
+
+.imageAbout img{
+    width: 300px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

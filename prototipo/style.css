@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans:wght@200;300&family=Nunito+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,200&family=Quicksand&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+    --colorTextPrimary: #AB29CA;
+    --colorTextSecundary: #101e2c;
+    --colorTextTerciary: #485663;
+    --mainColorPrimary: #9a00bf;
+    --mainColorSecundary: #f4d4fb;
+    --backgroundColor: #fafbfe;
+    --lowTextFontSize: 16px;
+    --textSizeTitle: 40px;
+    --textTitleCard: 24px;
+    --textTitleCardv2: 20px;
+    --textParagraph:16px;
+    --boxShadowPrimary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+header{
+width: 100%;
+height: 100px;
+position: fixed;
+z-index: 100;
+}
+
+.containerHeader{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000022;
+    padding: 0px 20px; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+}
+.logo img{
+    width: 200px;
+}
+.menu{
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.menu nav{
+    margin: 0px 20px;
+}
+.menu nav ul{
+    display: flex;
+    /* gap: 3rem; */
+}
+.menu nav ul li{
+    list-style: none;
+    margin: 20px 16px;
+}
+.menu nav ul li a{
+    color:var(--colorTextSecundary);
+    font-size: var(--lowTextFontSize);
+    /* font-weight: normal; */
+    position: relative;
+}
+.menu nav ul li a:hover{
+    color:brown; /*Variable*/
+}
+.btnCotizar{
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid #9A00BF;/*Variable*/
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 0px 20px;
+    transition: all 300ms;
+   /*  color: white;
+    font-weight: bolder; 
+    text-shadow: 1px 1px 2px pink; */
+}
+
+.btnCotizar:hover{
+    color: white;
+    background: #9A00BF;
+}
+.menu .redesSociales{
+    margin: 0px 10px;
+}
+.menu .redesSociales a{
+    margin: 0px 4px;
+}
+.menu .redesSociales img{
+    width: 20px;
+}
